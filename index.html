@@ -13,7 +13,7 @@
     </head>
     <body>
         <script>        
-            var reader = new HEIFReader('2.heic');
+            var reader = new HEIFReader('https://blob-eu-central-1-nwsekq.s3.eu-central-1.amazonaws.com/sara/18/188a/188a9bae-3d88-4819-89cb-faa99dc7aafa.bin?response-content-disposition=attachment%3B%20filename%3D%22MacOS%2520Big%2520Sur%2520Dynamic%25201.heic%22&response-content-type=image%2Fheif&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAI75SICYCOZ7DPWTA%2F20210327%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20210327T200058Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1800&X-Amz-Signature=beb5d86037a4cbf764541a933a96e5f8a575831d5aa7d6b20a8126bd64e0dac9');
             var decoder = new HevcDecoder();
             var imgData = new ImageProvider(reader, decoder);
 
